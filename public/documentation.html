@@ -19,16 +19,20 @@
         <th>Purpose of Method</th>
         <th>HTTP Method</th>
         <th>Endpoint</th>
+        <th>Format of Response Data</th>
+        <th>Format of Data in Request Body(If Needed)</th>
       </tr>
       <tr>
         <tb>Whole Movie List</tb>
         <tb>GET</tb>
         <tb>http://localhost:8080/movies</tb>
+        <tb>JSON</tb>
       </tr>
       <tr>
         <tb>Lookup Movie by Title</tb>
         <tb>GET</tb>
         <tb>http://localhost:8080/movies/<strong>Title of Movie</strong></tb>
+        <tb>JSON</tb>
       </tr>
       <tr>
         <tb>Lookup Genre by Name</tb>
@@ -36,6 +40,7 @@
         <tb
           >http://localhost:8080/movies/genre/<strong>Name of Genre</strong></tb
         >
+        <tb>JSON</tb>
       </tr>
       <tr>
         <tb>Lookup Director by Name</tb>
@@ -45,11 +50,14 @@
             >Name of Director</strong
           ></tb
         >
+        <tb>JSON</tb>
       </tr>
       <tr>
         <tb>New User Registration</tb>
         <tb>POST</tb>
         <tb>http://localhost:8080/users</tb>
+        <tb>Message Confirmation</tb>
+        <tb>JSON</tb>
       </tr>
       <tr>
         <tb>Add Movie to Favorites List</tb>
@@ -59,11 +67,14 @@
             >Name of Movie</strong
           ></tb
         >
+        <tb>Message Confirmation</tb>
       </tr>
       <tr>
         <tb>Update User Info</tb>
         <tb>PUT</tb>
         <tb>http://localhost:8080/users/<strong>Name of User</strong></tb>
+        <tb>Message Confirmation</tb>
+        <tb>JSON</tb>
       </tr>
       <tr>
         <tb>Remove Favorite Movie</tb>
@@ -73,11 +84,13 @@
             >Name of Movie</strong
           ></tb
         >
+        <tb>Message Confirmation</tb>
       </tr>
       <tr>
         <tb>Delete User Profile</tb>
         <tb>DELETE</tb>
         <tb>http://localhost:8080/users/<strong>Name of User</strong></tb>
+        <tb>Message Confirmation</tb>
       </tr>
     </table>
   </body>
