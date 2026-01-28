@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="utf-8" />
@@ -13,5 +13,72 @@
       information about movies, including details such as title, director,
       release year, and genre. (specifics to be determined)
     </p>
+    <h2>Endpoints</h2>
+    <table>
+      <tr>
+        <th>Purpose of Method</th>
+        <th>HTTP Method</th>
+        <th>Endpoint</th>
+      </tr>
+      <tr>
+        <tb>Whole Movie List</tb>
+        <tb>GET</tb>
+        <tb>http://localhost:8080/movies</tb>
+      </tr>
+      <tr>
+        <tb>Lookup Movie by Title</tb>
+        <tb>GET</tb>
+        <tb>http://localhost:8080/movies/<strong>Title of Movie</strong></tb>
+      </tr>
+      <tr>
+        <tb>Lookup Genre by Name</tb>
+        <tb>GET</tb>
+        <tb
+          >http://localhost:8080/movies/genre/<strong>Name of Genre</strong></tb
+        >
+      </tr>
+      <tr>
+        <tb>Lookup Director by Name</tb>
+        <tb>GET</tb>
+        <tb
+          >http://localhost:8080/movies/directors/<strong
+            >Name of Director</strong
+          ></tb
+        >
+      </tr>
+      <tr>
+        <tb>New User Registration</tb>
+        <tb>POST</tb>
+        <tb>http://localhost:8080/users</tb>
+      </tr>
+      <tr>
+        <tb>Add Movie to Favorites List</tb>
+        <tb>POST</tb>
+        <tb
+          >http://localhost:8080/users/<strong>Name of User</strong>/<strong
+            >Name of Movie</strong
+          ></tb
+        >
+      </tr>
+      <tr>
+        <tb>Update User Info</tb>
+        <tb>PUT</tb>
+        <tb>http://localhost:8080/users/<strong>Name of User</strong></tb>
+      </tr>
+      <tr>
+        <tb>Remove Favorite Movie</tb>
+        <tb>DELETE</tb>
+        <tb
+          >http://localhost:8080/users/<strong>Name of User</strong>/<strong
+            >Name of Movie</strong
+          ></tb
+        >
+      </tr>
+      <tr>
+        <tb>Delete User Profile</tb>
+        <tb>DELETE</tb>
+        <tb>http://localhost:8080/users/<strong>Name of User</strong></tb>
+      </tr>
+    </table>
   </body>
 </html>
