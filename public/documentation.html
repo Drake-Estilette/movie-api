@@ -26,13 +26,30 @@
         <tb>Whole Movie List</tb>
         <tb>GET</tb>
         <tb>http://localhost:8080/movies</tb>
-        <tb>JSON</tb>
+        <tb
+          >{ title: "Boondock Saints", director: { name: "Troy Duffy",
+          birthYear: 1971, biography: "An American filmmaker and musician known
+          for his work on cult films.", deathYear: null, }, movieDescription: "A
+          cult classic about vigilante brothers in Boston.", genre: { name:
+          "Action", genreDescription: "A genre characterized by fast-paced
+          sequences and physical stunts.", }, image:
+          "images/boondock-saints.jpeg", }...</tb
+        >
       </tr>
       <tr>
         <tb>Lookup Movie by Title</tb>
         <tb>GET</tb>
         <tb>http://localhost:8080/movies/<strong>Title of Movie</strong></tb>
-        <tb>JSON</tb>
+        <tb
+          >{ title: "The Chronicles of Riddick", director: { name: "David
+          Twohy", birthYear: 1955, biography: " He is known for working on
+          science fiction-action films, most notably The Chronicles of Riddick
+          series.", deathYear: null, }, movieDescription: "A science fiction
+          action film featuring the anti-hero Riddick.", genre: { name: "Science
+          Fiction", genreDescription: "A genre that explores futuristic concepts
+          and advanced technology.", }, image:
+          "images/the-chronicles-of-riddick.jpeg", }</tb
+        >
       </tr>
       <tr>
         <tb>Lookup Genre by Name</tb>
@@ -40,7 +57,10 @@
         <tb
           >http://localhost:8080/movies/genre/<strong>Name of Genre</strong></tb
         >
-        <tb>JSON</tb>
+        <tb>
+          genre: { name: "Science Fiction", genreDescription: "A genre that
+          explores futuristic concepts and advanced technology.", }</tb
+        >
       </tr>
       <tr>
         <tb>Lookup Director by Name</tb>
@@ -50,14 +70,18 @@
             >Name of Director</strong
           ></tb
         >
-        <tb>JSON</tb>
+        <tb
+          >director: { name: "David Twohy", birthYear: 1955, biography: " He is
+          known for working on science fiction-action films, most notably The
+          Chronicles of Riddick series.", deathYear: null, }</tb
+        >
       </tr>
       <tr>
         <tb>New User Registration</tb>
         <tb>POST</tb>
         <tb>http://localhost:8080/users</tb>
-        <tb>Message Confirmation</tb>
-        <tb>JSON</tb>
+        <tb>""Message Confirmation""</tb>
+        <tb>"name": "Drake" "favoriteMovies": [] </tb>
       </tr>
       <tr>
         <tb>Add Movie to Favorites List</tb>
@@ -67,14 +91,14 @@
             >Name of Movie</strong
           ></tb
         >
-        <tb>Message Confirmation</tb>
+        <tb>"Message Confirmation"</tb>
       </tr>
       <tr>
         <tb>Update User Info</tb>
         <tb>PUT</tb>
         <tb>http://localhost:8080/users/<strong>Name of User</strong></tb>
-        <tb>Message Confirmation</tb>
-        <tb>JSON</tb>
+        <tb>"Message Confirmation"</tb>
+        <tb>"Joeseph"</tb>
       </tr>
       <tr>
         <tb>Remove Favorite Movie</tb>
@@ -84,13 +108,13 @@
             >Name of Movie</strong
           ></tb
         >
-        <tb>Message Confirmation</tb>
+        <tb>"Message Confirmation"</tb>
       </tr>
       <tr>
         <tb>Delete User Profile</tb>
         <tb>DELETE</tb>
         <tb>http://localhost:8080/users/<strong>Name of User</strong></tb>
-        <tb>Message Confirmation</tb>
+        <tb>"Message Confirmation"</tb>
       </tr>
     </table>
   </body>
